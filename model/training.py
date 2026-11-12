@@ -118,3 +118,4 @@ checkpoint = {
     "optimizer": optimizer.state_dict()
 }
 save_all(checkpoint, draw_points, test_result)
+
