@@ -4,6 +4,7 @@ from data.dataset_helper import TEXT
 import random
 from model.params import *
 
+
 class Encoder(nn.Module):
     def __init__(self, embedding_size, hidden_size, num_layers, p):
         super(Encoder, self).__init__()
