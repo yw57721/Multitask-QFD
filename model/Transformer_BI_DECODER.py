@@ -3,6 +3,7 @@ import math
 from model.params import *
 from data.dataset_helper import TEXT
 
+
 class PositionalEncoding(nn.Module):
     r"""Inject some information about the relative or absolute position of the tokens
         in the sequence. The positional encodings have the same dimension as
