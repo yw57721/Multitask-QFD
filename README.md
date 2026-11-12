@@ -1,11 +1,6 @@
-# Models for computer configuration recommendation
-
-Data
-data/processed/\*: training set, validation set and test set of review and need data  
-data/raw/\*: unprocessed data  
+# Models for Bidirectional multitask learning for QFD
 
 Model  
-params.py: hyper parameters  
 SGM.py: seq2seq model  
 SGM_BI_DECODER.py: seq2seq + bidirectional decoder  
 Transformer.py: transformer model  
@@ -14,15 +9,6 @@ Transformer_BI_DECODER.py: transformer with bidirectional decoder mask
 training.py: training process of SGM.py and SGM_BI_DECODER.py  
 training_transformer.py:  training process of Transformer.py and Transformer_BI_DECODER.py  
 
-
-Training result  
-result_processor.py:  
-The input is a file name list that from folder result/test_result, which are the recall, precision and nDCG of the test set  
-The reason why the input is a list is that we wants to train a model with same dataset and hyper parameters in several times to get an average, in order to avoid noise.  
-output will be saved into result/processed_test_result with file name set by user, it contains the average result of training results
-
-painter.py:  
-users can change the content of the list named files to get the histogram of different results.  
 
 
 How to train a seq2seq model    
