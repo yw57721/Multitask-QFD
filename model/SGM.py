@@ -215,4 +215,4 @@ class LabelSmoothing(nn.Module):
 #         for index, device in enumerate(devices):
 #             assert outputs[index].shape == (batch_size, label_cnt[device])
 #         break
-#     print("test seq2seq pass")
+#     print("test seq2seq pass") 
