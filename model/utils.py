@@ -41,3 +41,4 @@ def save_all(checkpoints, points, test_result):
     save_to_csv(points, loss_path)
     save_to_json(get_params_dict(), param_path)
     save_to_json(test_result, test_result_path)
+
