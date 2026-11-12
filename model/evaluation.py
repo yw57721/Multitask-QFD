@@ -2,6 +2,7 @@ from model.params import DEVICE_ORDER, K
 import torch
 import math
 
+
 def evaluate(output_with_label, data_tag):
     result = dict()
     for index, device in enumerate(DEVICE_ORDER):
