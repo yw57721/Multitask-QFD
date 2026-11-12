@@ -127,6 +127,7 @@ class Transformer(nn.Module):
         src_input = self.pos_encoder(self.word_embed(src))
         # (output_seq_len, batch, word_embedding_size)
         trg_input = self.calculate_trg_embedding(target_dict, batch)
+        
         # (output_seq_len, batch, word_embedding_size)
         outputs = self.transformer(src=src_input, tgt=trg_input, tgt_mask=trg_mask, src_key_padding_mask=src_padding_mask)
         # remove the last output which is the <eos>
